@@ -9,15 +9,16 @@
     --logo-font-size: 26px;
     --font-size-h1: 44px;
     --first-font-size: 36px;
-    --second-font-size: 16px;
-    --third-font-size: 14px;
+    --second-font-size: 18px;
+    --third-font-size: 16px;
+    --forth-font-size: 14px;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-black: 900;
     --main-letter-spacing: 0.03em;
-    --hero-letter-spacing: 0.06em;
     --second-letter-spacing: 0.02em;
+    --third-letter-spacing: 0.06em;
 }
 
 /*   General styles   */
@@ -71,7 +72,7 @@ button:hover{
 }
 
 .nav-menu-element>a{
-    font-size: var(--third-font-size);
+    font-size: var(--forth-font-size);
     font-weight: var(--font-weight-medium);
     letter-spacing: var(--second-letter-spacing);
 }
@@ -82,7 +83,7 @@ button:hover{
     color: var(--accent-color);
 }
 .header-contacts-element>a{
-    font-size: var(--third-font-size);
+    font-size: var(--forth-font-size);
     font-weight: var(--font-weight-medium);
     color: var(--second-text-color);
     letter-spacing: var(--second-letter-spacing);
@@ -101,13 +102,15 @@ button:hover{
     text-align: center;
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-black);
+    letter-spacing: var(--third-letter-spacing);
     line-height: 60%;
 }
 .hero>button{
     background-color: var(--accent-color);
     color: var(--third-text-color);
-    font-size: var(--second-font-size);
+    font-size: var(--third-font-size);
     font-weight: var(--font-weight-bold);
+    letter-spacing: var(--third-letter-spacing);
 }
 .hero>button:hover, .hero>button:focus{
     background-color: var(--active-color);
@@ -116,12 +119,12 @@ button:hover{
 /*   Features styles   */
 
 .features-element>h3{
-    font-size: var(--third-font-size);
+    font-size: var(--forth-font-size);
     font-weight: var(--font-weight-bold);
 }
 .features-element>p{
     color: var(--second-text-color);
-    font-size: var(--third-font-size);
+    font-size: var(--forth-font-size);
     font-weight: var(--font-weight-regular);
     line-height: 24%;
 }
@@ -146,7 +149,7 @@ button:hover{
     background-color: white;
 }
 .team-member>h3{
-    font-size: var(--second-font-size);
+    font-size: var(--third-font-size);
     font-weight: var(--font-weight-medium);
 }
 .team-member>p{
@@ -169,15 +172,18 @@ footer{
     color: var(--accent-color);
 }
 
-.address>li{
-    font-size: var(--third-font-size);
+address{
+    
+}
+.address-info>li{
+    font-size: var(--forth-font-size);
     font-weight: var(--font-weight-regular);
     font-style: normal;
 }
-.address a{
+.address-info a{
     color: var(--third-text-color);
 }
-.address a:hover, .address a:focus{
+.address-info a:hover, .address a:focus{
     color: var(--accent-color);
 }
 .footer-contacts-element>a{
@@ -185,3 +191,27 @@ footer{
 }
 
 /*--------Portfolio styles--------*/
+
+/*   Filters styles   */
+.filter>button{
+    background-color: var(--third-background-color);
+    font-size: var(--third-font-size);
+    font-weight: var(--font-weight-medium);
+}
+.filter>button:hover, .filter>button:focus, .filter>button:active{
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+}
+
+/*   Portfolio elements styles   */
+
+.portfolio-element h2{
+    font-size: var(--second-font-size);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--third-letter-spacing);
+}
+.portfolio-element p{
+    font-size: var(--third-font-size);
+    font-weight: var(--font-weight-regular);
+    color: var(--second-text-color);
+}
