@@ -1,0 +1,187 @@
+:root{
+    --second-background-color: #2F303A;
+    --third-background-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --active-color: #188CE8;
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --third-text-color: white;
+    --logo-font-size: 26px;
+    --font-size-h1: 44px;
+    --first-font-size: 36px;
+    --second-font-size: 16px;
+    --third-font-size: 14px;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --main-letter-spacing: 0.03em;
+    --hero-letter-spacing: 0.06em;
+    --second-letter-spacing: 0.02em;
+}
+
+/*   General styles   */
+
+body{
+    background-color: white;
+    color: #212121;
+    font-family: Roboto, sans-serif;
+    letter-spacing: var(--main-letter-spacing);
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #212121;
+    font-family: Roboto, sans-serif;
+    cursor: default;
+    text-decoration: none;
+}
+button{
+    font-family: Roboto, sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/*--------Index styles--------*/
+
+/*   Header styles   */
+
+.logo-header{
+    color: black;
+    font-family: Raleway, sans-serif;
+    font-size: var(--logo-font-size);
+    font-weight: var(--font-weight-bold);
+}
+.logo-header>span{
+    color: var(--accent-color);
+}
+
+.nav-menu-element>a{
+    font-size: var(--third-font-size);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--second-letter-spacing);
+}
+.nav-menu-element>a:hover, .nav-menu-element>a:focus{
+    color: var(--accent-color);
+}
+.nav-menu .current{
+    color: var(--accent-color);
+}
+.header-contacts-element>a{
+    font-size: var(--third-font-size);
+    font-weight: var(--font-weight-medium);
+    color: var(--second-text-color);
+    letter-spacing: var(--second-letter-spacing);
+}
+.header-contacts-element>a:hover, .header-contacts-element>a:focus{
+    color: var(--accent-color);
+}
+
+/*   Hero styles   */
+
+.hero{
+    background-color: var(--second-background-color);
+}
+.hero>h1{
+    color: var(--third-text-color);
+    text-align: center;
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-black);
+    line-height: 60%;
+}
+.hero>button{
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    font-size: var(--second-font-size);
+    font-weight: var(--font-weight-bold);
+}
+.hero>button:hover, .hero>button:focus{
+    background-color: var(--active-color);
+}
+
+/*   Features styles   */
+
+.features-element>h3{
+    font-size: var(--third-font-size);
+    font-weight: var(--font-weight-bold);
+}
+.features-element>p{
+    color: var(--second-text-color);
+    font-size: var(--third-font-size);
+    font-weight: var(--font-weight-regular);
+    line-height: 24%;
+}
+
+/*   What we do styles   */
+
+.work>h2{
+    font-size: var(--first-font-size);
+    font-weight: var(--font-weight-bold);
+}
+
+/*   Our team styles   */
+
+.team{
+    background-color: var(--third-background-color);
+}
+.team>h2{
+    font-size: var(--first-font-size);
+    font-weight: var(--font-weight-bold);
+}
+.team-member{
+    background-color: white;
+}
+.team-member>h3{
+    font-size: var(--second-font-size);
+    font-weight: var(--font-weight-medium);
+}
+.team-member>p{
+    color: var(--second-text-color);
+    font-weight: var(--font-weight-regular);    
+}
+
+/*   Footer styles  */
+
+footer{
+    background-color: var(--second-background-color);
+}
+.footer-logo{
+    color: var(--third-text-color);
+    font-family: Raleway, sans-serif;
+    font-size: var(--logo-font-size);
+    font-weight: var(--font-weight-bold);
+}
+.footer-logo>span{
+    color: var(--accent-color);
+}
+
+.address>li{
+    font-size: var(--third-font-size);
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+}
+.address a{
+    color: var(--third-text-color);
+}
+.address a:hover, .address a:focus{
+    color: var(--accent-color);
+}
+.footer-contacts-element>a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*--------Portfolio styles--------*/
